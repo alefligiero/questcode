@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: alefligiero/frontend:alpha-staging
+          image: alefligiero/questcode-frontend:staging
           ports:
             - containerPort: 80

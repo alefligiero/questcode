@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: backend-user
-          image: alefligiero/backend-user:alpha
+          image: alefligiero/questcode-backend-user:all
           ports:
             - containerPort: 3020
           env:
@@ -35,3 +35,4 @@ spec:
                 secretKeyRef:
                   name: questcode
                   key: SECRET_OR_KEY
+
