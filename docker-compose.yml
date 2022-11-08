@@ -1,0 +1,10 @@
+version: '3'
+services:
+  backend-user:
+    image: "alefligiero/backend-user:alpha"
+    ports:
+      - "3020:3020"
+  frontend:
+    image: "alefligiero/frontend:alpha"
+    ports:
+      - "80:80"

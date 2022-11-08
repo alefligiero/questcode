@@ -1,0 +1,10 @@
+image:
+  tag: alpha-staging
+
+container:
+  port: 80
+
+service:
+  nodePort: 30080
+
+replicas: 2
