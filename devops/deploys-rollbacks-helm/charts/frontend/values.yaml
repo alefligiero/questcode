@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: alefligiero/frontend
+  repository: alefligiero/questcode-frontend
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "alpha-staging"
+  tag: "0.1.9"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -40,7 +40,9 @@ securityContext:
 
 service:
   type: ClusterIP
+  # type: NodePort
   port: 80
+  # nodePort: 30080
 
 ingress:
   enabled: true
